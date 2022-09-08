@@ -1,0 +1,14 @@
+config:
+  target: 'http://my-posts.com'
+  phases:
+    - duration: 60
+      arrivalRate: 20
+scenarios:
+  - flow:
+    - post:
+        url: "/"
+
+# Testing is run in artillery
+# Runs artillery run performance-testing.yaml
+# https://www.artillery.io/
+# Runs locally ab -c 20 -n 20  http://my-posts.com/
